@@ -1,0 +1,382 @@
+/* /////////////////////////////////////// section //////////////////////////////////////////// */
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+.portfolio {
+  width: 100vw;
+}
+.portfolioContainer {
+  margin-left: 15vw;
+}
+.protHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.protHeading h1 {
+  font-size: 7.6vw;
+  font-weight: 600;
+  opacity: 0.1;
+}
+.protHeading p {
+  position: absolute;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #343a40;
+}
+.p-line {
+  width: 4.5rem;
+  height: 3px;
+  background-color: #20c997;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 3rem;
+}
+
+#myBtnContainer {
+  text-align: center;
+  margin-top: 3.6rem;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+.btn.active {
+  background-color: #20c997;
+  color: white;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  padding: 0 0.4rem;
+  margin: 0.7rem;
+  margin-top: 3rem;
+}
+
+.column {
+  display: none;
+  flex: 1 0 150px;
+  flex: 33.33%;
+  max-width: 30.33%;
+}
+.content img {
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 8px 8px 6px -5px rgb(0, 0, 0, 0.2);
+}
+
+/* /////////////////////////////////////////////////// */
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  transition: background-color 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+.hoverN3 {
+  position: relative;
+}
+.hoverN3 img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.hoverN3:hover img {
+  opacity: 0.9;
+}
+.hoverN3:hover .middle {
+  opacity: 0.9;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.3));
+  text-align: center;
+}
+
+.text {
+  /* transition: opacity 400ms ease-in-out; */
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.text-pera {
+  padding-bottom: 3.5rem;
+}
+.text-btn-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-inline: 2rem;
+}
+.text span,
+.live {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-family: "Charm", cursive;
+  text-decoration: none;
+  color: white;
+}
+.text span:hover {
+  color: #12b886;
+  cursor: pointer;
+}
+.text .live:hover {
+  color: #12b886;
+  cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  align-items: center;
+  justify-content: center;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 75%;
+  margin-top: 0rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.projectInfo + p {
+  margin-bottom: 1rem;
+}
+.close:hover,
+.close:focus {
+  color: #12b886;
+  text-decoration: none;
+  cursor: pointer;
+}
+.proHeading {
+  text-align: center;
+}
+.proContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+.img {
+  width: 100%;
+}
+.img img {
+  width: 100%;
+  display: block;
+  text-align: center;
+  /* height: 40vh; */
+  object-fit: cover;
+}
+
+.deatils {
+  line-height: 1.7;
+  width: 55%;
+}
+
+.deatils:nth-child(3) {
+  padding-top: 1.6rem;
+}
+.showPro {
+  display: flex;
+}
+
+/* ///////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////   */
+@media only screen and (max-width: 1360px) {
+  .sidebar {
+    width: 17vw;
+  }
+  .column {
+    /* display: none; */
+    flex: 1 0 250px;
+    flex: 33.33%;
+    max-width: 30.33%;
+    padding: 0.5rem 0.5rem;
+  }
+  .portfolioContainer {
+    margin-left: 18vw;
+  }
+  .row {
+    padding: 0 0;
+  }
+  .modal-content {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .sidebar {
+    display: none;
+  }
+  .portfolioContainer {
+    margin: 0 2vw;
+  }
+  .portfolio {
+    margin-left: 0vw;
+  }
+  .column {
+    max-width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+  .portfolio {
+    margin-top: 4rem;
+  }
+
+  .img img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .modal-content {
+    width: 60%;
+  }
+  .deatils {
+    width: 100%;
+  }
+  .proContainer {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .modal {
+    align-items: flex-start;
+  }
+  /* ////////////////////////////////////////////////////////////////// */
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 860px) {
+  .protHeading h1 {
+    font-size: 11.6vw;
+    opacity: 0.1;
+  }
+  .modal-content {
+    width: 65%;
+  }
+  .modal {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 778px) {
+  /* .portfolio {
+    /* margin: 0 2vw; */
+  /* margin-top: 5vh; */
+  /* }  */
+  .protHeading {
+    margin-bottom: 4vh;
+  }
+  .protHeading h1 {
+    font-size: 13vw;
+  }
+  .protHeading p {
+    font-size: 2.2rem;
+  }
+  .line {
+    right: 1.2rem;
+  }
+  .row {
+    margin-top: 3rem;
+  }
+
+  .column {
+    max-width: 100%;
+    flex: 2 0 300px;
+  }
+  .proContainer {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .protHeading h1 {
+    font-size: 16vw;
+  }
+  .protHeading {
+    margin-top: 1rem;
+  }
+  .portfolio {
+    margin-top: 4rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .modal-content {
+    margin-top: 2.2rem;
+    width: 88%;
+    padding: 1.6rem;
+  }
+  .portfolioContainer {
+    margin-left: 0vw;
+  }
+  .protHeading p {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .img img {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  .p-line {
+    left: 2.6rem;
+  }
+}
+/* ////////////////////////////////////////////////////////////////// */
+/* box-shadow: 0 6px 16px 0 rgb(0 0 0 / 15%); */
+/* box-shadow: 0 10px 32px 0 rgb(0 0 0 / 35%); hover */
+/* box-shadow: 0 6px 16px 0 rgb(0 0 0 / 35%); hov */
+/* box-shadow: 0 6px 16px 0 rgb(207 130 23 / 15%); */
+
+/* ox-shadow: 0 10px 32px 0 rgb(207 130 23 / 35%); */
+/* box-shadow: 0 6px 16px 0 rgb(207 130 23 / 35%); */

@@ -1,0 +1,499 @@
+/* /////////////////////////////////////// section //////////////////////////////////////////// */
+
+#aboutSection {
+  width: 100%;
+  min-height: 90vh;
+  margin-top: 1.6rem;
+  padding-bottom: 3.5rem;
+  /* margin-left: 15vw; */
+}
+
+.aboutHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.aboutContainer {
+  margin-left: 15vw;
+}
+.bigAbout {
+  font-size: 7.5vw;
+  font-weight: 600;
+  opacity: 0.1;
+}
+
+.aboutPera {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.aboutLine {
+  width: 4.8rem;
+  height: 3px;
+  background-color: #20c997;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 6.8rem;
+}
+
+/* ////////////////////////////////////// About Section  ////////////////////////////////////////////////////////////// */
+
+.aboutFlex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  margin-top: 4rem;
+  color: black;
+}
+
+.aboutMe {
+  width: 52%;
+}
+.aboutMe h1 {
+  font-size: 2rem;
+}
+.marginMe {
+  margin: 1rem auto;
+}
+.nameColor {
+  color: #20c997;
+}
+/* part 2 */
+.aboutData {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ulDiv {
+  position: relative;
+}
+.unorder li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding: 0.6rem;
+}
+.span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+li a {
+  text-decoration: none;
+  color: #12b886;
+  font-weight: 500;
+}
+.btnA {
+  position: absolute;
+  text-decoration: none;
+  border: none;
+  margin-top: 5vh;
+  left: 1rem;
+  padding: 0.6rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 16px 0 rgb(0 0 0 / 15%);
+  background-color: #20c997;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 400ms ease-in-out;
+  outline: none;
+  transition-property: transform, box-shadow;
+}
+.btnA:hover {
+  background-color: #38d9a9;
+  color: white;
+  transition: all 400ms ease-in-out;
+  transition-property: transform, box-shadow;
+  box-shadow: 0 10px 32px 0 rgb(0 0 0 / 35%);
+  transform: translateY(-4px);
+}
+
+.btnA:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  color: white;
+}
+/* /////////////////////// Work - What i do  CSS starts //////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#whatIdoSection {
+  width: 100%;
+  /* height: 100vh; */
+}
+.workHeading {
+  /* margin-right: 10rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+.whatIdoContainer {
+  margin-left: 16vw;
+}
+.workPera {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+}
+.workLine {
+  width: 4.7rem;
+  height: 3px;
+  background-color: #20c997;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 3.6vw;
+}
+.workFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+.workDataOne {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.heading-work {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* margin-top: 2rem; */
+  position: relative;
+  /* margin-right: 9.5rem; */
+  /* flex-wrap: wrap; */
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.workDataTwo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+.allHtmlData {
+  height: 20vh;
+  width: 50vh;
+  position: relative;
+  padding-left: 2.6rem;
+}
+/* .webDiv {
+  padding-left: 2.4rem;
+} */
+.icon::before {
+  position: absolute;
+  left: -2.8rem;
+  bottom: 4rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  /* border: 2px solid #343a40; */
+  width: 4.3rem;
+  height: 4rem;
+  padding: 1.2rem;
+  text-align: center;
+  color: #20c997;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* border-radius: 5px; */
+}
+.html::before {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+.css::before {
+  content: "\f38b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+.js::before {
+  content: "\f3b8";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+.nodejs::before {
+  content: "\f836";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+.mongodb::before {
+  content: "≈";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  /* font-size: 2em; */
+}
+.react::before {
+  content: "\f41b";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+.section {
+  margin-left: 18vw;
+}
+/* ///////////////// Media queries //////////////////////////////////////////////////////*/
+@media only screen and (max-width: 1450px) {
+  .icon::before {
+    bottom: 5.3rem;
+  }
+  .aboutContainer {
+    margin-left: 17vw;
+  }
+  .sidebar {
+    width: 17vw;
+  }
+  .whatIdoContainer {
+    margin-left: 18vw;
+  }
+  .workFlex {
+    margin-left: 7.5rem;
+  }
+  .allHtmlData p {
+    padding-right: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  #aboutSection {
+    width: 100%;
+    /* height: 80vh; */
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .sidebar {
+    width: 18vw;
+    display: none;
+  }
+  .hideMeShowMe {
+    display: block;
+  }
+  .body {
+    overflow: hidden;
+  }
+  .allHtmlData p {
+    padding-right: 0rem;
+  }
+  #aboutSection {
+    margin-left: 0vw;
+    /* height: 100vh; */
+  }
+  .aboutHeading {
+    margin-right: 0rem;
+  }
+  .aboutContainer {
+    margin-left: 0vw;
+  }
+  .sidebar {
+    width: 17vw;
+  }
+  .whatIdoContainer {
+    margin-left: 0vw;
+  }
+  #whatIdoSection {
+    margin-left: 0vw;
+    /* margin-top: 3rem; */
+  }
+  /* .workHeading {
+    margin-right: 3.5rem;
+  } */
+  .workFlex {
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+  }
+  .icon::before {
+    bottom: 3rem;
+  }
+  .allHtmlData {
+    width: 54vh;
+  }
+
+  /* ////////////////////////////////////////////////////////////////// */
+}
+@media only screen and (max-width: 920px) {
+  .icon::before {
+    bottom: 13rem;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 860px) {
+  #aboutSection {
+    margin-top: 9.5rem;
+    margin-left: 4vw;
+  }
+  .ulDiv {
+    padding-top: 0rem;
+    position: relative;
+  }
+  .aboutData {
+    max-width: 500px;
+  }
+  .aboutFlex {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  #aboutSection {
+    margin-left: 0vw;
+    /* height: 80vh; */
+  }
+  .webDiv {
+    height: 7.6rem;
+  }
+  .whatIdoContainer {
+    margin-left: 5rem;
+  }
+  .workPera {
+    font-size: 2rem;
+  }
+  .icon::before {
+    bottom: 10rem;
+  }
+  #aboutSection {
+    margin-top: 0rem;
+    margin-left: 0vw;
+  }
+  .bigAbout {
+    font-size: 11.5vw;
+  }
+  .aboutPera {
+    font-size: 2rem;
+  }
+  .aboutMe {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 778px) {
+  .icon::before {
+    bottom: 8rem;
+  }
+  #aboutSection {
+    margin-left: 0vw;
+    /* height: 90vh; */
+  }
+  .whatIdoContainer {
+    margin-left: 2rem;
+  }
+  /* //////////////////////////////////////////////////////////////////////////// */
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 460px) {
+  /* overflow: hidden; */
+  /* width: 390px;*/
+  #aboutSection {
+    margin-top: 1.5rem;
+    /* height: 110vh; */
+  }
+  .heading-work {
+    font-size: 1.2rem;
+  }
+  .allHtmlData p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .allHtmlData {
+    padding-left: 0rem;
+  }
+  .icon::before {
+    bottom: 6.5rem;
+    left: -5.5rem;
+  }
+  .bigAbout {
+    font-size: 17vw;
+  }
+  .aboutFlex {
+    margin-top: 3rem;
+  }
+  .aboutPera {
+    font-size: 2rem;
+  }
+  .aboutFlex {
+    margin-top: 2rem;
+  }
+  .aboutMe {
+    width: 80%;
+  }
+  .aboutMe h1 {
+    font-size: 1.6rem;
+  }
+  .aboutData {
+    /* margin-top: 2rem; */
+    width: 80%;
+  }
+  .btnA {
+    left: 3rem;
+    margin-top: 2.2rem;
+  }
+  .aboutLine {
+    right: 4.5rem;
+  }
+  #whatIdoSection {
+    margin: 3.5rem 0rem;
+    /* width: 100%; */
+  }
+  .workHeading {
+    margin-right: 0rem;
+    /* font-size: 14vw; */
+  }
+  .workPera {
+    font-size: 2rem;
+  }
+  .workLine {
+    right: 2.6rem;
+  }
+  .whatIdoContainer {
+    margin-left: 0rem;
+  }
+  .workFlex {
+    margin-left: 7.5rem;
+    line-height: 1.4;
+  }
+  .webDiv {
+    width: 18rem;
+  }
+  .allHtmlData {
+    width: 17rem;
+  }
+  .aboutContainer {
+    margin-left: 0vw;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #aboutSection {
+    margin-top: 1.5rem;
+    /* height: 120vh; */
+  }
+  .icon::before {
+    bottom: 5.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  #aboutSection {
+    margin-top: 1.5rem;
+    /* height: 145vh; */
+  }
+  .icon::before {
+    bottom: 4rem;
+  }
+}

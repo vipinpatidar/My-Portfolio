@@ -1,0 +1,367 @@
+/* /////////////////////////////////////// section //////////////////////////////////////////// */
+
+.resume {
+  width: 100%;
+  /* height: 100vh; */
+}
+.resumeContainer {
+  margin-top: 4rem;
+  margin-left: 15vw;
+}
+.resumeHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.resumeHeading h1 {
+  font-size: 7.5vw;
+  opacity: 0.1;
+  font-weight: 600;
+}
+
+.resumeHeading p {
+  position: absolute;
+  font-size: 2.36rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.r-line {
+  width: 4.5rem;
+  height: 3px;
+  background-color: #20c997;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 4.6rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+.resumeFlex {
+  margin: 2rem 2rem;
+}
+.myEducation {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0rem;
+}
+.resumehead {
+  margin-left: 7rem;
+  color: #212529;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.collage {
+  width: 40%;
+  line-height: 1.3;
+  /* border: 2px solid black; */
+  padding: 1.6rem 1.6rem;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); */
+  border-radius: 7px;
+}
+.time {
+  background-color: #20c997;
+  color: white;
+  width: 5.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.nameR {
+  color: black;
+  margin: 0.5rem auto;
+}
+.place {
+  color: #fa5252;
+  font-weight: 600;
+  margin: 0.5rem auto;
+}
+.name-resume {
+  font-size: 1.6rem;
+  /* font-weight: bolder; */
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 1.5rem auto;
+}
+/* ////////////////////////// skill //////////////////////////////////// */
+.skillsFlex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1rem 0rem;
+}
+.myskillsHeading {
+  margin: 6rem 11rem 0rem;
+  color: #212529;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.frontend,
+.backend {
+  width: 33%;
+  height: 43vh;
+  line-height: 3;
+}
+.slillBar {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #868e96;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+.htmlR {
+  width: 75%;
+  height: 0.5rem;
+  background-color: #04aa6d;
+}
+
+.cssR {
+  width: 60%;
+  height: 0.5rem;
+  background-color: #2196f3;
+}
+
+.jsR {
+  width: 55%;
+  height: 0.5rem;
+  background-color: #f44336;
+}
+.reactR {
+  width: 35%;
+  height: 0.5rem;
+  background-color: #f44336;
+}
+.nodejsR {
+  width: 25%;
+  height: 0.5rem;
+  background-color: #2196f3;
+}
+.mongodbR {
+  width: 20%;
+  height: 0.5rem;
+  background-color: #04aa6d;
+}
+.apiR {
+  width: 55%;
+  height: 0.5rem;
+  background-color: #f44336;
+}
+.SecurityR {
+  width: 45%;
+  height: 0.5rem;
+  background-color: #a66cff;
+}
+.skills {
+  border-radius: 10rem;
+}
+.skillClass {
+  position: relative;
+  color: #000;
+}
+.spanSkill {
+  /* margin-left: 80%; */
+  position: absolute;
+  right: 0rem;
+  top: 0.5rem;
+}
+
+/* ///////////////////////// */
+.btnB {
+  position: relative;
+  text-decoration: none;
+  border: 2px solid black;
+  margin-top: 3vh;
+  left: 32rem;
+  bottom: 2rem;
+  padding: 0.6rem 1.8rem;
+  border: 2px solid #6c757d;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px 0px rgb(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+  font-weight: 500;
+  transition: all 0.3s;
+  transform: scale(0.98);
+  outline: none;
+}
+
+.btnB:hover {
+  background-color: #6c757d;
+  color: white;
+}
+.btn:active {
+  transform: scale(1);
+}
+.fa-solid {
+  margin-left: 0.1rem;
+}
+.hideMeShowMe {
+  display: none;
+}
+.section {
+  margin-left: 18vw;
+}
+/* ////////////////// media queries ////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 1450px) {
+  .sidebar {
+    width: 18vw;
+  }
+  .resumeContainer {
+    margin-left: 18vw;
+  }
+  .btnB {
+    left: 25rem;
+  }
+  .resumeFlex {
+    margin: 2rem 0rem;
+  }
+  .resumehead {
+    margin-left: 7rem;
+  }
+  .myskillsHeading {
+    margin-left: 9rem;
+  }
+  .skillsFlex {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .sidebar {
+    width: 18vw;
+  }
+  .btnB {
+    left: 25rem;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .sidebar {
+    width: 18vw;
+    display: none;
+  }
+  .hideMeShowMe {
+    display: block;
+  }
+  #resume {
+    margin-left: 0vw;
+  }
+  .resumeFlex {
+    margin: 2rem 1rem;
+  }
+  .resumeHeading p {
+    font-size: 2rem;
+  }
+  .btnB {
+    left: 25rem;
+    bottom: -0.8rem;
+  }
+  .resumeContainer {
+    margin-left: 0vw;
+  }
+  /* ////////////////////////////////////////////////////////////////// */
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 860px) {
+  .resumeFlex {
+    margin: 5rem 1rem;
+  }
+  .skillsFlex {
+    margin: 2rem 1rem;
+  }
+  .myskillsHeading {
+    margin: 8rem 6rem 0rem;
+  }
+  .btnB {
+    left: 19rem;
+    bottom: 1rem;
+  }
+  .resumeHeading h1 {
+    font-size: 6.2rem;
+  }
+  .frontend,
+  .backend {
+    height: 25vh;
+  }
+}
+@media screen and (max-width: 778px) {
+  .frontend,
+  .backend {
+    height: 30vh;
+    width: 40%;
+  }
+  .btnB {
+    left: 17rem;
+    bottom: 0rem;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 460px) {
+  .resumeHeading h1 {
+    font-size: 17vw;
+  }
+  .resumeContainer {
+    margin-top: 1rem;
+  }
+  .r-line {
+    right: 3.2rem;
+  }
+  .resumeHeading p {
+    font-size: 2rem;
+  }
+  .resumeFlex {
+    margin: 3rem 0rem;
+    flex-wrap: wrap;
+  }
+  .resumeContainer {
+    margin-left: 0vw;
+  }
+  .resumehead {
+    margin-left: 4rem;
+    font-size: 1.6rem;
+  }
+  .myEducation {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  .collage {
+    flex: 1 0 300px;
+    margin-top: 2rem;
+  }
+  .skillsFlex {
+    margin: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .frontend,
+  .backend {
+    flex: 1 0 300px;
+    /* margin-top: 2rem; */
+    height: 15rem;
+    margin-bottom: 1.6rem;
+  }
+  .name-resume {
+    font-size: 1.4rem;
+  }
+  .myskillsHeading {
+    margin: 1rem 4rem 0rem;
+    font-size: 1.6rem;
+  }
+  .btnB {
+    left: 5rem;
+    bottom: 0rem;
+  }
+  /* ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 90%;
+    min-height: 0;
+  } */
+}
