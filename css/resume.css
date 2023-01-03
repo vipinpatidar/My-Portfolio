@@ -100,7 +100,7 @@
 }
 .frontend,
 .backend {
-  width: 33%;
+  width: 36%;
   height: 43vh;
   line-height: 3;
 }
@@ -292,7 +292,7 @@
   .frontend,
   .backend {
     height: 30vh;
-    width: 40%;
+    width: 38%;
   }
   .btnB {
     left: 17rem;
@@ -328,7 +328,7 @@
   .myEducation {
     display: flex;
     /* justify-content: space-evenly; */
-    margin: 1rem 2rem;
+    margin: 1rem 1.6rem;
     flex-wrap: wrap;
   }
   .collage {
@@ -336,7 +336,7 @@
     margin-top: 2rem;
   }
   .skillsFlex {
-    margin: 2rem 2rem;
+    margin: 2rem 1.6rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -347,16 +347,23 @@
     height: 15rem;
     margin-bottom: 1.6rem;
   }
-  .name-resume {
-    font-size: 1.4rem;
+  .place {
+    font-size: 1.17rem;
+  }
+  .explain {
+    font-size: 1.15rem;
   }
   .myskillsHeading {
     margin: 1rem 4rem 0rem;
     font-size: 1.6rem;
   }
   .btnB {
-    left: 5rem;
+    left: 4.5rem;
     bottom: 0rem;
+    font-size: 1.14rem;
+  }
+  .skillClass {
+    font-size: 1.15rem;
   }
   /* ul.menu-nav,
   div.menu-branding {

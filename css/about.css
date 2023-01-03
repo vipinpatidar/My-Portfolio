@@ -344,6 +344,10 @@ li a {
   .aboutData {
     max-width: 500px;
   }
+  .allHtmlData {
+    width: 50vh;
+  }
+
   .aboutFlex {
     margin-top: 3rem;
     flex-direction: column;
@@ -360,7 +364,7 @@ li a {
     height: 7.6rem;
   }
   .whatIdoContainer {
-    margin-left: 5rem;
+    margin-left: 2.5rem;
   }
   .workPera {
     font-size: 2rem;
@@ -416,37 +420,42 @@ li a {
   }
   .icon::before {
     bottom: 6.5rem;
-    left: -5.5rem;
+    left: -5rem;
   }
   .bigAbout {
     font-size: 17vw;
   }
   .aboutFlex {
     margin-top: 3rem;
+    padding-inline: 1.6rem;
   }
   .aboutPera {
     font-size: 2rem;
   }
   .aboutFlex {
     margin-top: 2rem;
+    line-height: 1.33;
   }
   .aboutMe {
-    width: 80%;
+    width: 100%;
   }
   .aboutMe h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
+
   .aboutData {
     /* margin-top: 2rem; */
-    width: 80%;
+    width: 100%;
   }
   .btnA {
     left: 3rem;
     margin-top: 2.2rem;
+    font-size: 1.14rem;
   }
   .aboutLine {
     right: 4.5rem;
   }
+
   #whatIdoSection {
     margin: 3.5rem 0rem;
     /* width: 100%; */
@@ -465,18 +474,28 @@ li a {
     margin-left: 0rem;
   }
   .workFlex {
-    margin-left: 7.5rem;
-    line-height: 1.4;
+    margin-left: 6rem;
+    gap: 1rem;
   }
   .webDiv {
     width: 18rem;
   }
   .allHtmlData {
-    width: 17rem;
+    width: 17.8rem;
+  }
+  .allHtmlData p {
+    font-size: 1.1rem;
   }
   .aboutContainer {
     margin-left: 0vw;
     margin-top: 2rem;
+  }
+
+  .aboutMe p {
+    font-size: 1.15rem;
+  }
+  .unorder li {
+    font-size: 1.15rem;
   }
 }
 @media screen and (max-width: 400px) {
@@ -492,6 +511,9 @@ li a {
   #aboutSection {
     margin-top: 1.5rem;
     /* height: 145vh; */
+  }
+  .allHtmlData p {
+    padding-right: 1rem;
   }
   .icon::before {
     bottom: 4rem;
