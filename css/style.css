@@ -37,9 +37,10 @@ body {
   z-index: 1;
 }
 .sidebar h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
   margin: 0.5rem auto;
+  font-weight: 600;
 }
 .sidebar nav ul {
   display: flex;
@@ -54,7 +55,7 @@ body {
   padding: 0.7rem 1rem;
 }
 .sidebar nav .homei {
-  margin-top: 2rem;
+  margin-top: 1.7rem;
 }
 .sidebar nav .li-img {
   padding: 0;
@@ -81,7 +82,7 @@ body {
 .icons {
   margin-top: auto;
   /* padding: 0.6rem; */
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.4rem;
   color: white;
 }
 .icons a i {
@@ -272,9 +273,12 @@ body {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
-.col input:not(:last-child) {
-  margin: 0 2.8rem 1rem -0.9rem;
+.col-input {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
 }
+
 .btn-contact {
   /* margin: 1.5rem 0.5rem; */
   padding: 0.7rem 1.6rem;
@@ -338,7 +342,7 @@ body {
 }
 .col input {
   border: 2px solid rgba(0, 0, 0, 0.41);
-  width: 23vw;
+  width: 24vw;
   height: 3rem;
   padding: 0.5rem 1rem;
   border-radius: 7px;
@@ -388,11 +392,9 @@ body {
   .body {
     overflow-x: hidden;
   }
-  .form-row {
-    margin-right: 8rem;
-  }
+
   .formTable {
-    left: 39vw;
+    left: 34vw;
   }
   .sidebar nav li {
     padding: 0.9rem 1rem;
@@ -706,8 +708,12 @@ body {
   .main {
     margin-left: 0vw;
   }
-  .col input:not(:last-child) {
-    margin: 0 0rem 1rem 0rem;
+
+  .col-input {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
   .divInfo {
     margin-left: 0rem;
@@ -750,7 +756,6 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.43);
     width: 80vw;
     height: 3rem;
-    margin: 0 0.8rem 1rem 2.1vw;
   }
   .formTable {
     margin-left: 1rem;
