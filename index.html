@@ -999,15 +999,15 @@ width="380" height="330" style="border:0;" allowfullscreen="" loading="lazy" ref
    </div>
    <div class="formTable">
     <h2>SEND ME A NOTE</h2>
- <form>
+ <form name="contact" netlify>
   <div class="row mb-3 send-note-form">
     <div class="col">
-      <input type="text" placeholder="Your Nice Name..." class="form-control" id="inputEmail3" required>
-       <input type="email" placeholder="Your Email please..." class="form-control" id="inputPassword3" required>
+      <input name="full-name" type="text" placeholder="Your Nice Name..." class="form-control" id="inputEmail3" required>
+       <input name="email" type="email" placeholder="Your Email please..." class="form-control" id="inputPassword3" required>
     </div>
   </div>
   <div class="col">
-  <textarea class="form-control" placeholder="Tell Me more About You..." id="exampleFormControlTextarea1" rows="3" required></textarea>
+  <textarea name="message" class="form-control" placeholder="Tell Me more About You..." id="exampleFormControlTextarea1" rows="3" required></textarea>
  </div>
   <button type="submit" class="btn-contact">Send Message</button>
  </form>

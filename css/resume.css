@@ -1,8 +1,10 @@
 /* /////////////////////////////////////// section //////////////////////////////////////////// */
 
-.resume {
+#resume {
   width: 100%;
   /* height: 100vh; */
+  /* background-color: #a66cff; */
+  padding-bottom: 3.5rem;
 }
 .resumeContainer {
   margin-top: 4rem;
@@ -175,13 +177,13 @@
   margin-top: 3vh;
   left: 32rem;
   bottom: 2rem;
-  padding: 0.6rem 1.8rem;
+  padding: 0.7rem 1.6rem;
   border: 2px solid #6c757d;
   border-radius: 30px;
   box-shadow: 0 6px 10px 0px rgb(0, 0, 0, 0.2);
   background-color: #fff;
   color: #6c757d;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 500;
   font-weight: 500;
   transition: all 0.3s;
