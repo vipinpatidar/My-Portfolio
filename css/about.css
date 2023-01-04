@@ -58,6 +58,10 @@
 .aboutMe h1 {
   font-size: 2rem;
 }
+.ram {
+  visibility: hidden;
+  opacity: 0;
+}
 .marginMe {
   margin: 1rem auto;
 }
