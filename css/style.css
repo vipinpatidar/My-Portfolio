@@ -805,10 +805,10 @@ body {
     font-size: 1.4rem;
   }
   .address p {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
   .address div {
-    font-size: 1.12rem;
+    font-size: 1.08rem;
   }
   .formTable h2 {
     font-size: 1.4rem;
@@ -819,7 +819,7 @@ body {
   }
   .col input,
   .col textarea {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
 }
 @media only screen and (max-width: 380px) {

@@ -428,7 +428,7 @@ li a {
     padding-left: 0rem;
   }
   .icon::before {
-    bottom: 6.5rem;
+    bottom: 5.5rem;
     left: -5rem;
   }
   .bigAbout {
@@ -495,7 +495,7 @@ li a {
     width: 17.8rem;
   }
   .allHtmlData p {
-    font-size: 1.1rem;
+    font-size: 1.02rem;
   }
   .aboutContainer {
     margin-left: 0vw;
@@ -503,10 +503,10 @@ li a {
   }
 
   .aboutMe p {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
   .unorder li {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
 }
 @media screen and (max-width: 400px) {
