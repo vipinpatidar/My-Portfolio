@@ -76,6 +76,10 @@
 }
 .ulDiv {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 .unorder li {
   list-style: none;
@@ -93,11 +97,8 @@ li a {
   font-weight: 500;
 }
 .btnA {
-  position: absolute;
   text-decoration: none;
   border: none;
-  margin-top: 5vh;
-  left: 1rem;
   padding: 0.7rem 1.8rem;
   border: none;
   border-radius: 30px;
@@ -161,10 +162,9 @@ li a {
 .workFlex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   /* flex-direction: column; */
   margin-top: 4rem;
-  gap: 2.6rem;
 }
 .workDataOne {
   display: flex;
@@ -191,7 +191,7 @@ li a {
   gap: 1.6rem;
 }
 .allHtmlData {
-  width: 26rem;
+  width: 27rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -366,6 +366,12 @@ li a {
   .workPera {
     font-size: 2rem;
   }
+  .workFlex {
+    gap: 2.6rem;
+  }
+  .allHtmlData {
+    width: 35rem;
+  }
   .icon::before {
     bottom: 10rem;
   }
@@ -440,17 +446,8 @@ li a {
     width: 100%;
   }
   .btnA {
-    position: relative;
-    margin-top: 0;
     font-size: 1.12rem;
     padding: 0.9rem 1.8rem;
-    left: 0;
-  }
-  .ulDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
   }
   .aboutLine {
     right: 4.5rem;

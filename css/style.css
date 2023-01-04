@@ -219,9 +219,8 @@ body {
  
 } */
 .contactMe {
-  width: 100%;
   /* height: 100vh; */
-  margin-left: 15vw;
+  margin-left: 16vw;
   /* background-color: white; */
   margin-top: 4.6rem;
   font-family: "Poppins", sans-serif;
@@ -234,7 +233,6 @@ body {
   flex-direction: column;
   /* margin-top: 2rem; */
   position: relative;
-  margin-right: 14rem;
   /* flex-wrap: wrap; */
 }
 
@@ -269,7 +267,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
   /* height:40vh ; */
-  margin-right: 14rem;
   margin-top: 3rem;
   flex-wrap: wrap;
 }
@@ -290,8 +287,6 @@ body {
   font-size: 1.05rem;
   font-weight: 500;
   font-weight: 500;
-  position: absolute;
-  left: 19vw;
   cursor: pointer;
   margin-top: 0.5rem;
   outline: none;
@@ -314,15 +309,21 @@ body {
 .formTable {
   display: flex;
   flex-direction: column;
+  align-items: center;
   line-height: 2.5;
-  position: absolute;
+  /* position: absolute;
   padding-bottom: 6rem;
   /* top: 90vh; */
-  margin-top: 3rem;
+  margin: 3rem auto;
   left: 33vw;
 }
 .formTable h2 {
   font-weight: 600;
+}
+.formTable form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form-control {
   /* padding: 1.4rem 4.5rem; */
@@ -393,9 +394,6 @@ body {
     overflow-x: hidden;
   }
 
-  .formTable {
-    left: 34vw;
-  }
   .sidebar nav li {
     padding: 0.9rem 1rem;
   }
@@ -419,21 +417,13 @@ body {
   }
   .contactMe {
     margin-top: 0.5rem;
-    margin-left: 5vw;
-  }
-  .heading {
-    margin-right: 10vw;
+    margin-inline: 5vw;
   }
   .divInfo {
     margin-left: 4.4rem;
   }
   .form-row {
-    margin-right: 4rem;
     margin-top: 4rem;
-  }
-  .formTable {
-    /* top: 95vh; */
-    left: 28vw;
   }
   .main {
     margin-left: 0vw;
@@ -654,12 +644,7 @@ body {
     margin-left: 5vw;
   }
 
-  .heading {
-    margin-right: 7vw;
-  }
-
   .form-row {
-    margin-right: 4rem;
     margin-top: 7rem;
   }
 
