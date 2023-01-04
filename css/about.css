@@ -131,7 +131,7 @@ li a {
   width: 100%;
   /* height: 100vh; */
   background-color: #f8f9fa;
-  padding-bottom: 2.5rem;
+  padding-bottom: 5rem;
 }
 .workHeading {
   /* margin-right: 10rem; */
@@ -161,16 +161,16 @@ li a {
 .workFlex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   /* flex-direction: column; */
-  margin-left: 2rem;
   margin-top: 4rem;
+  gap: 2.6rem;
 }
 .workDataOne {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 .heading-work {
   display: flex;
@@ -188,21 +188,19 @@ li a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 .allHtmlData {
-  height: 20vh;
-  width: 50vh;
+  width: 26rem;
   position: relative;
-  padding-left: 2.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 /* .webDiv {
   padding-left: 2.4rem;
 } */
 .icon::before {
-  position: absolute;
-  left: -2.8rem;
-  bottom: 4rem;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -210,7 +208,7 @@ li a {
   -webkit-font-smoothing: antialiased;
   font-size: 1.6rem;
   /* border: 2px solid #343a40; */
-  width: 4.3rem;
+  width: 6.5rem;
   height: 4rem;
   padding: 1.2rem;
   text-align: center;
@@ -267,12 +265,6 @@ li a {
   .whatIdoContainer {
     margin-left: 18vw;
   }
-  .workFlex {
-    margin-left: 7.5rem;
-  }
-  .allHtmlData p {
-    padding-right: 1.6rem;
-  }
 }
 @media only screen and (max-width: 1360px) {
   #aboutSection {
@@ -323,13 +315,9 @@ li a {
   } */
   .workFlex {
     margin-top: 2rem;
-    margin-left: 2.5rem;
   }
   .icon::before {
     bottom: 3rem;
-  }
-  .allHtmlData {
-    width: 54vh;
   }
 
   /* ////////////////////////////////////////////////////////////////// */
@@ -353,14 +341,11 @@ li a {
   .aboutData {
     max-width: 500px;
   }
-  .allHtmlData {
-    width: 50vh;
-  }
 
   .aboutFlex {
     margin-top: 3rem;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -369,8 +354,11 @@ li a {
     margin-left: 0vw;
     /* height: 80vh; */
   }
-  .webDiv {
-    height: 7.6rem;
+  .workDataOne {
+    gap: 2.6rem;
+  }
+  .workDataTwo {
+    gap: 2.6rem;
   }
   .whatIdoContainer {
     margin-left: 2.5rem;
@@ -410,13 +398,7 @@ li a {
 }
 
 /* ////////////////////////////////////////////////////////////////// */
-@media screen and (max-width: 460px) {
-  /* overflow: hidden; */
-  /* width: 390px;*/
-  #aboutSection {
-    margin-top: 1.5rem;
-    /* height: 110vh; */
-  }
+@media screen and (max-width: 480px) {
   .heading-work {
     font-size: 1.2rem;
   }
@@ -436,7 +418,7 @@ li a {
   }
   .aboutFlex {
     margin-top: 3rem;
-    padding-inline: 1.6rem;
+    padding-inline: 1.3rem;
   }
   .aboutPera {
     font-size: 2rem;
@@ -458,18 +440,20 @@ li a {
     width: 100%;
   }
   .btnA {
-    left: 4rem;
-    margin-top: 2.2rem;
-    font-size: 1.15rem;
+    position: relative;
+    margin-top: 0;
+    font-size: 1.12rem;
     padding: 0.9rem 1.8rem;
+    left: 0;
+  }
+  .ulDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
   .aboutLine {
     right: 4.5rem;
-  }
-
-  #whatIdoSection {
-    margin: 3.5rem 0rem;
-    /* width: 100%; */
   }
   .workHeading {
     margin-right: 0rem;
@@ -485,14 +469,19 @@ li a {
     margin-left: 0rem;
   }
   .workFlex {
-    margin-left: 6rem;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 1rem 1.3rem;
+    justify-content: flex-start;
   }
-  .webDiv {
-    width: 18rem;
+  .workDataOne {
+    gap: 2rem;
+  }
+  .workDataTwo {
+    gap: 2rem;
   }
   .allHtmlData {
-    width: 17.8rem;
+    width: auto;
+    gap: 1rem;
   }
   .allHtmlData p {
     font-size: 1.02rem;
@@ -510,10 +499,6 @@ li a {
   }
 }
 @media screen and (max-width: 400px) {
-  #aboutSection {
-    margin-top: 1.5rem;
-    /* height: 120vh; */
-  }
   .icon::before {
     bottom: 5.5rem;
   }
@@ -522,11 +507,5 @@ li a {
   #aboutSection {
     margin-top: 1.5rem;
     /* height: 145vh; */
-  }
-  .allHtmlData p {
-    padding-right: 1rem;
-  }
-  .icon::before {
-    bottom: 4rem;
   }
 }

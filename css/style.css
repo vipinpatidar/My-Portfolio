@@ -704,7 +704,7 @@ body {
 }
 
 /* ////////////////////////////////////////////////////////////////// */
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .main {
     margin-left: 0vw;
   }
@@ -749,9 +749,6 @@ body {
     margin-top: 2rem;
     margin-left: 1vw;
   }
-  #contact {
-    margin-top: 2rem;
-  }
   .col input {
     border: 2px solid rgba(0, 0, 0, 0.43);
     width: 80vw;
@@ -784,7 +781,7 @@ body {
     font-weight: 600;
   }
   .btn-contact {
-    font-size: 1.14rem;
+    font-size: 1.12rem;
     padding: 0.8rem 1.8rem;
     /* width: 46vw; */
     left: 20.5vw;

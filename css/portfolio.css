@@ -339,7 +339,7 @@
     margin-top: 1rem;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
   .protHeading h1 {
     font-size: 16vw;
   }
@@ -350,10 +350,10 @@
     margin-top: 4rem;
   }
   .btn {
-    font-size: 1.1rem;
+    font-size: 1.02rem;
   }
   .modal-content {
-    margin-top: 2rem;
+    margin-top: 2.7rem;
     width: 88%;
     padding: 1.6rem;
   }
