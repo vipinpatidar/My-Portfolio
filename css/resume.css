@@ -46,7 +46,8 @@
 }
 .myEducation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   margin: 2rem 0rem;
 }
 .resumehead {
@@ -90,12 +91,13 @@
 /* ////////////////////////// skill //////////////////////////////////// */
 .skillsFlex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 1rem 0rem;
+  gap: 3rem;
 }
 .myskillsHeading {
-  margin: 6rem 11rem 0rem;
+  margin: 3rem 10rem 0rem;
   color: #212529;
   font-size: 1.8rem;
   font-weight: 600;
@@ -114,19 +116,19 @@
   border-radius: 10rem;
 }
 .htmlR {
-  width: 75%;
+  width: 80%;
   height: 0.5rem;
   background-color: #04aa6d;
 }
 
 .cssR {
-  width: 60%;
+  width: 65%;
   height: 0.5rem;
   background-color: #2196f3;
 }
 
 .jsR {
-  width: 55%;
+  width: 60%;
   height: 0.5rem;
   background-color: #f44336;
 }
@@ -136,7 +138,7 @@
   background-color: #f44336;
 }
 .nodejsR {
-  width: 25%;
+  width: 20%;
   height: 0.5rem;
   background-color: #2196f3;
 }
@@ -175,7 +177,7 @@
   text-decoration: none;
   border: 2px solid black;
   margin-top: 3vh;
-  left: 32rem;
+  left: 32.5rem;
   bottom: 2rem;
   padding: 0.7rem 1.6rem;
   border: 2px solid #6c757d;
@@ -227,8 +229,10 @@
   .myskillsHeading {
     margin-left: 9rem;
   }
-  .skillsFlex {
-    justify-content: space-around;
+  .frontend,
+  .backend {
+    width: 38%;
+    height: 42vh;
   }
 }
 @media only screen and (max-width: 1320px) {
@@ -270,13 +274,13 @@
 /* //////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 860px) {
   .resumeFlex {
-    margin: 5rem 1rem;
+    margin: 5rem 0rem;
   }
   .skillsFlex {
     margin: 2rem 1rem;
   }
   .myskillsHeading {
-    margin: 8rem 6rem 0rem;
+    margin: 3rem 6rem 0rem;
   }
   .btnB {
     left: 19rem;
@@ -287,6 +291,7 @@
   }
   .frontend,
   .backend {
+    width: 39%;
     height: 25vh;
   }
 }
@@ -324,13 +329,14 @@
     margin-left: 0vw;
   }
   .resumehead {
-    margin-left: 4rem;
+    margin-left: 3rem;
     font-size: 1.6rem;
   }
   .myEducation {
     display: flex;
     /* justify-content: space-evenly; */
-    margin: 1rem 1.6rem;
+    margin: 1.2rem 1.6rem;
+    gap: 0;
     flex-wrap: wrap;
   }
   .collage {
@@ -340,6 +346,7 @@
   .skillsFlex {
     margin: 2rem 1.6rem;
     display: flex;
+    gap: 0;
     flex-wrap: wrap;
   }
   .frontend,
@@ -356,7 +363,7 @@
     font-size: 1.15rem;
   }
   .myskillsHeading {
-    margin: 1rem 4rem 0rem;
+    margin: 1rem 3rem 0rem;
     font-size: 1.6rem;
   }
   .btnB {

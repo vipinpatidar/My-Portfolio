@@ -11,8 +11,9 @@
 ::before {
   box-sizing: border-box;
 }
+
 body {
-  color: #4c4d4d;
+  color: #404141;
   background-color: white;
   width: 100%;
   /* position: relative; */
@@ -38,21 +39,27 @@ body {
 .sidebar h2 {
   font-size: 1.2rem;
   text-align: center;
-  margin: 0.3rem auto;
+  margin: 0.5rem auto;
 }
 .sidebar nav ul {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  height: 100vh;
 }
 .sidebar nav li {
   list-style: none;
-  font-size: 1.12rem;
-  padding: 0.8rem 1rem;
+  font-size: 1.06rem;
+  padding: 0.7rem 1rem;
 }
-
+.sidebar nav .homei {
+  margin-top: 2rem;
+}
+.sidebar nav .li-img {
+  padding: 0;
+  padding-top: 1.8rem;
+}
 .sidebar nav li a {
   text-decoration: none;
   color: white;
@@ -72,8 +79,9 @@ body {
   height: 200px;
 }
 .icons {
-  margin-top: 1.8rem;
+  margin-top: auto;
   /* padding: 0.6rem; */
+  padding-bottom: 1.6rem;
   color: white;
 }
 .icons a i {
@@ -358,7 +366,7 @@ body {
 #myBtnPort {
   display: none;
   position: fixed;
-  right: 0.4em;
+  right: 0.3em;
   bottom: 2rem;
   color: rgba(0, 0, 0, 0.3);
   z-index: 2;
@@ -369,7 +377,7 @@ body {
   color: #20c997;
 }
 /* //////////////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////*/
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1380px) {
   .sidebar {
     width: 18vw;
   }
@@ -385,6 +393,12 @@ body {
   }
   .formTable {
     left: 39vw;
+  }
+  .sidebar nav li {
+    padding: 0.9rem 1rem;
+  }
+  .sidebar nav .homei {
+    margin-top: 3rem;
   }
 }
 
@@ -439,8 +453,8 @@ body {
   .menu-btn {
     position: fixed;
     z-index: 500;
-    right: 60px;
-    top: 60px;
+    right: 50px;
+    top: 45px;
     cursor: pointer;
     transition: all 0.6s ease-out;
   }

@@ -2,9 +2,9 @@
 
 #aboutSection {
   width: 100%;
-  min-height: 90vh;
+  min-height: 95vh;
   padding-top: 1.6rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 6rem;
   /* margin-left: 15vw; */
 }
 
@@ -275,6 +275,9 @@ li a {
     width: 100%;
     /* height: 80vh; */
   }
+  .aboutMe h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -437,6 +440,7 @@ li a {
   .aboutFlex {
     margin-top: 2rem;
     line-height: 1.33;
+    gap: 2.6rem;
   }
   .aboutMe {
     width: 100%;
