@@ -272,7 +272,7 @@
     max-width: 100%;
   }
   .portfolio {
-    margin-top: 4rem;
+    margin-top: 1.3rem;
   }
 
   .img img {
@@ -344,10 +344,7 @@
     font-size: 16vw;
   }
   .protHeading {
-    margin-top: 1rem;
-  }
-  .portfolio {
-    margin-top: 4rem;
+    margin-top: 1.3rem;
   }
   .btn {
     font-size: 1.02rem;

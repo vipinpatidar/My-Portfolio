@@ -335,7 +335,7 @@ body {
 }
 .col textarea {
   /* margin: 1rem; */
-  width: 50vw;
+  width: 48rem;
   height: 6rem;
   padding: 0.5rem 1rem;
   border: 2px solid rgba(0, 0, 0, 0.441);
@@ -343,7 +343,7 @@ body {
 }
 .col input {
   border: 2px solid rgba(0, 0, 0, 0.41);
-  width: 24vw;
+  width: 23rem;
   height: 3rem;
   padding: 0.5rem 1rem;
   border-radius: 7px;
@@ -385,6 +385,13 @@ body {
 @media only screen and (max-width: 1380px) {
   .sidebar {
     width: 18vw;
+  }
+  .col textarea {
+    /* margin: 1rem; */
+    width: 38rem;
+  }
+  .col input {
+    width: 18rem;
   }
   .contactMe {
     margin-top: 0.5rem;
@@ -611,8 +618,7 @@ body {
 /* //////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 860px) {
   .contactMe {
-    margin-top: 6.5rem;
-    margin-left: 5vw;
+    margin-top: 3rem;
   }
   .divInfo {
     margin-left: 4rem;
@@ -731,19 +737,15 @@ body {
     left: 3rem;
   }
   .contactMe {
-    margin-top: 2rem;
-    margin-left: 1vw;
+    margin-top: 1.3rem;
   }
   .col input {
     border: 2px solid rgba(0, 0, 0, 0.43);
-    width: 80vw;
+    width: 82vw;
     height: 3rem;
   }
   .formTable {
-    margin-left: 1rem;
-    /* z-index: 0; */
     margin-top: 2rem !important;
-    left: 2vw;
     width: 90vw;
     text-align: center;
   }
@@ -751,9 +753,6 @@ body {
     width: 325px;
     height: 325px;
     margin: 2rem auto;
-  }
-  .heading {
-    margin-right: 5vw;
   }
   .form-row {
     margin-right: 0rem;
@@ -776,7 +775,7 @@ body {
     width: 80vw;
   }
   .col textarea {
-    width: 80vw;
+    width: 82vw;
   }
   .address {
     width: 90vw;
@@ -806,7 +805,6 @@ body {
 }
 @media only screen and (max-width: 380px) {
   .formTable {
-    margin-left: 1rem;
     margin-top: 2rem !important;
     left: 2vw;
   }
