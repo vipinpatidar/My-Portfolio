@@ -264,9 +264,9 @@ body {
 
 .form-row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 3rem;
   align-items: center;
-  /* height:40vh ; */
   margin-top: 3rem;
   flex-wrap: wrap;
 }
@@ -361,7 +361,10 @@ body {
 .address i:hover {
   color: #111418;
 }
-
+.map {
+  width: 50vw;
+  height: 50vh;
+}
 .hideMeShowMe {
   display: none;
 }
@@ -392,6 +395,9 @@ body {
   }
   .col input {
     width: 18rem;
+  }
+  .map {
+    height: 45vh;
   }
   .contactMe {
     margin-top: 0.5rem;
@@ -447,6 +453,9 @@ body {
   }
   .btn-contact {
     left: 17vw;
+  }
+  .map {
+    height: 55vh;
   }
   /* ////////////////////////////////////////////////////////////////// */
   .menu-btn {
@@ -632,6 +641,10 @@ body {
   .bigHeading {
     font-size: 11.5vw;
   }
+  .map {
+    height: 31vh;
+    width: 52vw;
+  }
 }
 @media screen and (max-width: 778px) {
   .main {
@@ -750,12 +763,14 @@ body {
     text-align: center;
   }
   .map {
-    width: 325px;
-    height: 325px;
+    width: 96%;
+    height: 330px;
     margin: 2rem auto;
+    order: 1;
   }
   .form-row {
     margin-right: 0rem;
+    gap: 0;
   }
   .bigHeading {
     font-size: 17vw;
