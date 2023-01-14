@@ -109,7 +109,6 @@ body {
 .main {
   height: 100vh;
   width: 100%;
-  /* margin-left: 15vw; */
   color: white;
   display: flex;
   justify-content: center;
@@ -697,7 +696,7 @@ body {
   }
 
   .menu-branding .portrait {
-    background: url("/sm-port.jpg") no-repeat;
+    /* background: url("/sm-port.jpg") no-repeat; */
     width: 150px;
     height: 150px;
     background-size: contain;

@@ -135,11 +135,9 @@ clickLinks.forEach((item, i) => {
     setTimeout(() => {
       const x = document.querySelectorAll(`[href="${window.location.hash}"]`);
       x.forEach((link) => {
-        console.log(link);
         link.style.color = "#20c997";
       });
     }, 0);
-    console.log(item);
     item.classList.contains("show") ? toggleMenu() : "";
     // toggleMenu();
   });
