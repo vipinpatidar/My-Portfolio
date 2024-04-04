@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 95vh;
   padding-top: 1.6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   /* margin-left: 15vw; */
 }
 
@@ -72,7 +72,7 @@
 .aboutData {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .ulDiv {
   position: relative;
@@ -233,12 +233,25 @@ li a {
   font-weight: 900;
 }
 .nodejs::before {
-  content: "\f836";
+  content: "TS";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.node::before {
+  content: "\f419";
   font-family: "Font Awesome 5 Brands";
   font-weight: 900;
 }
+
 .mongodb::before {
   content: "≈";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  /* font-size: 2em; */
+}
+.mongo::before {
+  content: "\f06c";
   font-family: "Font Awesome 5 Free";
   font-weight: bolder;
   /* font-size: 2em; */

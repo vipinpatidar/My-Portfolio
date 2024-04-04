@@ -293,6 +293,54 @@
     align-items: flex-start;
   }
   /* ////////////////////////////////////////////////////////////////// */
+  /* Card Style changed */
+  .middle {
+    opacity: 1;
+    position: relative;
+    top: 0%;
+    left: 0;
+    z-index: 0;
+    transform: translate(0, 0);
+    height: max-content;
+    background: linear-gradient(to left, #8fd4f1, #88efc4);
+  }
+  .hoverN3 img {
+    opacity: 1;
+    display: block;
+  }
+  .hoverN3:hover img {
+    opacity: 1;
+  }
+  .hoverN3:hover .middle {
+    opacity: 1;
+    background: linear-gradient(to left, #8fd4f1, #88efc4);
+    text-align: center;
+  }
+  .text {
+    /* transition: opacity 400ms ease-in-out; */
+    color: #111;
+    font-size: 1.4rem;
+    padding: 2rem 0rem 1.4rem;
+  }
+  .text-pera {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+    color: #4943ff;
+  }
+  .text-btn-flex {
+    padding-bottom: 0rem;
+  }
+  .text span,
+  .live {
+    color: #111;
+  }
+  .text span:hover {
+    color: #4943ff;
+  }
+  .text .live:hover {
+    color: #4943ff;
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////// */

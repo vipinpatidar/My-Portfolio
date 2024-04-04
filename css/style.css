@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #404141;
   background-color: white;
@@ -39,7 +43,7 @@ body {
 .sidebar h2 {
   font-size: 1.3rem;
   text-align: center;
-  margin: 0.5rem auto;
+  margin: 1.5rem auto 0.7rem;
   font-weight: 600;
 }
 .sidebar nav ul {
@@ -371,17 +375,26 @@ body {
   margin-left: 18vw;
 }
 #myBtnPort {
-  display: none;
   position: fixed;
-  right: 0.3em;
+  right: 0.6em;
   bottom: 2rem;
-  color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #555;
+  border-radius: 100%;
   z-index: 2;
   cursor: pointer;
-  font-size: 1.8rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 12px;
 }
+
 #myBtnPort:hover {
-  color: #20c997;
+  background-color: #20c997;
+  color: white;
+  border: none;
 }
 /* //////////////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 1380px) {
@@ -727,7 +740,8 @@ body {
   }
   #myBtnPort {
     right: 0.45rem;
-    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
   }
   .body {
     height: 100%;

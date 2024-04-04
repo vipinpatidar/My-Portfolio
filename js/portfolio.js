@@ -92,7 +92,7 @@ function scrollUp() {
     document.body.scrollTop > 400 ||
     document.documentElement.scrollTop > 400
   ) {
-    scrollBtn.style.display = "block";
+    scrollBtn.style.display = "flex";
   } else {
     scrollBtn.style.display = "none";
   }
