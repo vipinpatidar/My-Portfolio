@@ -28,7 +28,6 @@ body {
 .container {
   overflow-x: hidden;
 }
-
 /* //////////////////////////////////////////////////////////////////////// */
 
 .sidebar {
@@ -384,7 +383,7 @@ body {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: white;
