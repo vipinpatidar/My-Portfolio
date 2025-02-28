@@ -299,7 +299,7 @@ body {
   color: white;
   background-color: #12b886;
   transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
-  box-shadow: 0 10px 32px 0 rgb(0 0 0 / 35%);
+  box-shadow: 0 10px 32px 0 rgb(0 0 0 / 30%);
   transform: translateY(-4px);
   /* transform: scale(1.1); */
 }

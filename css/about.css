@@ -84,7 +84,7 @@
 .unorder li {
   list-style: none;
   border-bottom: 1px solid black;
-  padding: 0.6rem;
+  padding: 0.8rem 0.6rem;
 }
 .span {
   font-size: 1.2rem;
@@ -243,6 +243,11 @@ li a {
   font-family: "Font Awesome 5 Brands";
   font-weight: 900;
 }
+.next::before {
+  content: "\4e";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
 
 .mongodb::before {
   content: "≈";
@@ -252,6 +257,12 @@ li a {
 }
 .mongo::before {
   content: "\f06c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  /* font-size: 2em; */
+}
+.docker::before {
+  content: "\44";
   font-family: "Font Awesome 5 Free";
   font-weight: bolder;
   /* font-size: 2em; */

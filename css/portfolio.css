@@ -108,7 +108,7 @@
 }
 .hoverN3:hover .middle {
   opacity: 0.9;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.18));
   text-align: center;
 }
 

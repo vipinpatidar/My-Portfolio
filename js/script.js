@@ -19,7 +19,7 @@ class Typewriter {
   }
 
   type() {
-    // Curremt index of word
+    // Current index of word
     const Current = this.wordIndex % this.words.length;
 
     // console.log(this.wordIndex , this.words.length , Current)
