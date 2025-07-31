@@ -1,73 +1,82 @@
+// Initial filter display
 filterSelection("all");
-function filterSelection(btnArea) {
-  let column = document.getElementsByClassName("column");
 
-  if (btnArea === "all") btnArea = "";
-  for (let i = 0; i < column.length; i++) {
-    removeClass(column[i], "showPro");
-    if (column[i].className.indexOf(btnArea) > -1)
-      addClass(column[i], "showPro");
-  }
-}
+function filterSelection(category) {
+  const columns = document.getElementsByClassName("column");
+  const filterCategory = category === "all" ? "" : category;
 
-function addClass(element, name) {
-  let arrayColumn = element.className.split(" ");
-  let arrayClass = name.split(" ");
-
-  arrayClass.forEach((arrayTwo) => {
-    if (arrayColumn.indexOf(arrayTwo) == -1) {
-      element.className += " " + arrayTwo;
+  Array.from(columns).forEach((column) => {
+    column.classList.remove("showPro");
+    if (column.className.includes(filterCategory)) {
+      column.classList.add("showPro");
     }
   });
 }
 
-function removeClass(element, name) {
-  let arrayOne = element.className.split(" ");
-  let arrayTwo = name.split(" ");
+function updateClassList(element, classNames, action) {
+  const elementClasses = element.className.split(" ");
+  const targetClasses = classNames.split(" ");
 
-  for (let i = 0; i < arrayTwo.length; i++) {
-    while (arrayOne.indexOf(arrayTwo[i]) > -1) {
-      arrayOne.splice(arrayOne.indexOf(arrayTwo[i]), 1);
+  targetClasses.forEach((className) => {
+    const classIndex = elementClasses.indexOf(className);
+    if (action === "add" && classIndex === -1) {
+      elementClasses.push(className);
+    } else if (action === "remove" && classIndex > -1) {
+      elementClasses.splice(classIndex, 1);
     }
-  }
-  element.className = arrayOne.join(" ");
+  });
+
+  element.className = elementClasses.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-let btnContainer = document.getElementById("myBtnContainer");
-let btns = btnContainer.getElementsByClassName("btn");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+// Button active state management
+const btnContainer = document.getElementById("myBtnContainer");
+const filterButtons = btnContainer.getElementsByClassName("btn");
+
+Array.from(filterButtons).forEach((button) => {
+  button.addEventListener("click", function () {
+    const currentActive = document.querySelector(".btn.active");
+    currentActive.classList.remove("active");
+    this.classList.add("active");
   });
-}
+});
 
 ///////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Get the button that opens the modal
-let btn = document.querySelectorAll(".myBtn");
-btn.forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    const btnId = btn.dataset.btn;
-    document.querySelector(`[data-modal="${btnId}"]`).classList.add("showPro");
+// Modal open buttons
+document.querySelectorAll(".myBtn").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const modalId = btn.dataset.btn;
+    const modal = document.querySelector(`[data-modal="${modalId}"]`);
+    if (modal) {
+      modal.classList.add("showPro");
+      document.body.style.overflow = "hidden";
+    }
   });
 });
 
-let span = document.querySelectorAll(".close");
-// console.log(span);
-span.forEach((X) => {
-  X.addEventListener("click", function (e) {
-    e.target.parentElement.parentElement.classList.remove("showPro");
+// Modal close buttons
+document.querySelectorAll(".close").forEach((closeBtn) => {
+  closeBtn.addEventListener("click", function (e) {
+    const modal = e.target.closest(".showPro");
+    if (modal) {
+      modal.classList.remove("showPro");
+      document.body.style.overflow = "visible";
+    }
   });
 });
 
-let show = document.querySelector(".showPro");
+// Close modal when clicking outside the modal content
 window.addEventListener("click", function (event) {
-  event.target.classList.remove("showPro");
-  // console.log(event.target);
+  const modals = document.querySelectorAll(".showPro[data-modal]");
+  modals.forEach((modal) => {
+    if (event.target === modal) {
+      modal.classList.remove("showPro");
+      document.body.style.overflow = "visible";
+    }
+  });
 });
 
 // window.onclick = function (event) {
